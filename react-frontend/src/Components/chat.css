@@ -1,0 +1,137 @@
+/* 
+The Base structure for the CSS and HTML was found in this video:
+https://www.youtube.com/watch?v=qbKJj691FFg&ab_channel=EasyHTMLLearner 
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	height: 100vh;
+	background-color: #6eb27c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 900px;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+	background-color: #005377;
+}
+
+.header h1 {
+	color: white;
+	padding: 15px;
+}
+
+.body {
+	flex: 1;
+	color: white;
+	background-color: #32b18f;
+	padding: 20px 30px;
+
+	/* Makes Chat scrollable */
+	overflow-x: auto;
+}
+
+.message {
+	margin: 5px;
+	padding: 10px 18px;
+	width: fit-content;
+	border-radius: 5px;
+	max-width: 350px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+	margin-bottom: 5px;
+}
+
+.botMessage {
+	background-color: #037d7a;
+	color: white;
+}
+
+.image {
+	margin: 5px;
+	display: flex;
+	max-width: 350px;
+	max-height: 250px;
+
+	object-fit: cover;
+	object-position: top;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+
+.usrMessage {
+	margin-left: auto;
+	background-color: #07a7a4;
+	color: white;
+}
+
+.usrImage {
+	margin-left: auto;
+}
+
+.selected {
+	border: 5px solid #ddd;
+  	border-radius: 4px;
+	border-color: #037d7a;
+   }
+
+.footer {
+	height: 40px;
+}
+
+.textInput {
+	float: left;
+	height: 40px;
+	width: 80%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+
+.sendButton {
+	float: left;
+	height: 40px;
+	width: 15%;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #005377;
+	color: white;
+	cursor: pointer;
+}
+
+form button:hover {
+	background-color: #06a77d;
+	transition: 0.2s;
+}
+
+.hiddenFileInput {
+	width: 5%;
+	height: 40px;
+	display: inline-block;
+
+	/*for the background, optional*/
+	background: center center no-repeat;
+	background-size: 60% 60%;
+	background-image: url(UploadButton.png);
+	color: white;
+}
+
+.hiddenFileInput:hover {
+	background-color: #06a77d;
+	transition: 0.2s;
+}
+
+
